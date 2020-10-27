@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#464646">
+
+    <!-- 자신이 선생님인 경우일 때 누르는 버튼!-->
+
+    <!-- 선생님으로 들어갈 수 있게 알려주는 텍스트 -->
+    <ImageButton
+        android:id="@+id/teacher"
+        android:layout_width="143dp"
+        android:layout_height="152dp"
+        android:layout_marginBottom="276dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/choose_teacher"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/teacher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/version"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacher" />
+
+    <!-- 자신이 학생인 경우일 때 누르는 버튼!-->
+
+    <!-- 학생일 경우 여기로 들어가면 된다는 걸 알려주는 텍스트 -->
+    <ImageButton
+        android:id="@+id/student"
+        android:layout_width="142dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="276dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/choose_student"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stu" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/version2"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student" />
+
+    <!-- 로고 -->
+    <ImageView
+        android:id="@+id/img_check2"
+        android:layout_width="486dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/checkcheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

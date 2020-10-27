@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#464646">
+
+    <!-- 선생님 버전이라고 알려주는 텍스트 -->
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="93dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/teacher_name1"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 수업을 예약할 수 있고 , 코드를 입력 할 수 있는 창으로 넘어가는 버튼 -->
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#464646"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 이전 페이지로 돌아갈 수 있는 버튼 -->
+    <Button
+        android:id="@+id/back_button2"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toStartOf="@+id/id_title"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 예약 할 수 있는 버튼 -->
+    <Button
+        android:id="@+id/calender"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/cal"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/list"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 학생들 출결 담당 하는 버튼 -->
+    <Button
+        android:id="@+id/list"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/doc"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/information"
+        app:layout_constraintStart_toEndOf="@+id/calender" />
+
+    <!-- 정보수정 할 수 있는 버튼 -->
+    <Button
+        android:id="@+id/information"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/in"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/list" />
+
+    <!-- 로고 -->
+    <ImageView
+        android:id="@+id/check3"
+        android:layout_width="295dp"
+        android:layout_height="157dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/checkcheck" />
+
+    <!-- 이미지용 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="266dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_button2"
+        app:srcCompat="@drawable/java_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

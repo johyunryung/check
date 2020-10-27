@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#464646">
+
+    <!-- 이메일을 입력해야 하는 창!-->
+    <EditText
+        android:id="@+id/join_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/make_email"
+        android:textColorHint="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 이름을 입력 할 수 있게 알려주는 이미지 -->
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintEnd_toStartOf="@+id/join_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/name" />
+
+    <!-- 비밀번호를 입력해야 하는 창!-->
+    <EditText
+        android:id="@+id/join_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/join_email" />
+
+    <!-- 비밀번호를 입력할 때 안 보이게 막아주는 창 밎 비밀번호라는 걸 알려주는 이미지 -->
+    <ImageView
+        android:id="@+id/img_pwd"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/password_lable_image"
+        app:layout_constraintEnd_toStartOf="@+id/join_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_user"
+        app:srcCompat="@drawable/key" />
+
+    <!-- 로그인 버튼을 누르면 이동하는 버튼-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="#636363"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/join_password" />
+
+    <!-- 회원가입 버튼을 누르면 이동하는 버튼-->
+    <Button
+        android:id="@+id/btn_fristlogin"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:background="#636363"
+        android:text="@string/join_login"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/join_password" />
+
+    <!-- 로고-->
+    <ImageView
+        android:id="@+id/img_check1"
+        android:layout_width="427dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/checkcheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

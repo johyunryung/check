@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#464646">
+
+    <!--메인화면으로 이동할 수 있는 버튼 -->
+    <Button
+        android:id="@+id/back_button2"
+        android:layout_width="45dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--수업이름을 입력 할 수 있는 곳 -->
+    <EditText
+        android:id="@+id/text_classname"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="308dp"
+        android:ems="10"
+        android:hint="@string/class_name"
+        android:textColorHint="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--수업 코드르 입력 할 수 있는 곳 -->
+    <EditText
+        android:id="@+id/text_classcord"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="@string/class_cord"
+        android:textColorHint="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_classname"/>
+
+    <!--학교 이미지 !-->
+    <ImageView
+        android:id="@+id/school1"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_classname"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_button2"
+        app:srcCompat="@drawable/scho" />
+
+    <!--학교 이미지-->
+    <ImageView
+        android:id="@+id/school2"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_classcord"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/school1"
+        app:srcCompat="@drawable/scho" />
+
+    <!-- 학교코드랑 이름을 입력했는데 취소하고 싶을때 누르는 버튼 -->
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="116dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="152dp"
+        android:background="#4C4B4B"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_join"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- 학교코드랑 이름을 입력한 후 누르면 메인으로 알려주는 버튼 -->
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="111dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="152dp"
+        android:background="#464646"
+        android:text="@string/class_join"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel" />
+
+    <!-- 로고 -->
+    <ImageView
+        android:id="@+id/img_check3"
+        android:layout_width="492dp"
+        android:layout_height="183dp"
+        android:layout_marginBottom="464dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/checkcheck"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

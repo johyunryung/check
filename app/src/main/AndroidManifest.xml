@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.hs.emirim.s2019w37.check">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity"></activity> <!-- 로그인창 !-->
+        <activity android:name=".JoinActivity"></activity>  <!-- 회원 가입창 !-->
+        <activity android:name=".ChooseActivity"></activity>  <!-- 선생님인지 학생인지 고를 수 있는 창 !-->
+        <activity android:name=".MainPage_teacherActivity"></activity>  <!-- 선생님 메인 화면 !-->
+        <activity android:name=".Code_input"></activity> <!-- 수업코드를 입력 할 수 있는 창 ! -->
+        <activity android:name=".Check_calender"></activity> <!-- 스케줄 예약 할 수 있는 창 ! -->
+        <activity android:name=".Check_attendance"></activity> <!-- 학생들 출결 상황을 알 수 있는 창 ! -->
+        <activity android:name=".Check_information"></activity> <!-- 개인정보 수정할 수 있는 창 ! -->
+        <activity android:name=".LogoActivity">  <!-- 로그가 뜨는 창!-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
